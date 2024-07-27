@@ -23,3 +23,15 @@ Repo of me testing out different DL architectures
 - Makemore
 
   - Impl of [vid](https://www.youtube.com/watch?v=PaCmpygFfXo)
+
+- Embedding
+
+  - Ensembling bge-small-en with ml models (NB)
+
+## HF Models
+
+- [google-bert/bert-base-uncased](https://huggingface.co/google-bert/bert-base-uncased)
+
+- [albert/albert-base-v2](https://huggingface.co/albert/albert-base-v2)
+
+- [BAAI/bge-small-en-v1.5](https://huggingface.co/BAAI/bge-small-en-v1.5)
