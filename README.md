@@ -28,6 +28,10 @@ Repo of me testing out different DL architectures
 
   - Ensembling bge-small-en with ml models (NB)
 
+- Neural Probabilistic Language Model
+
+  - Impl of [A Neural Probabilistic Language Model](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
+
 ## HF Models
 
 - [google-bert/bert-base-uncased](https://huggingface.co/google-bert/bert-base-uncased)
