@@ -17,8 +17,7 @@ def get_data():
     return words, stoi, itos
 
 
-def build_dataset(words: list[str], stoi: object, itos: object):
-    block_size = 3
+def build_dataset(words: list[str], stoi: object, block_size=3):
     X, Y = [], []
 
     X, Y = [], []
@@ -37,7 +36,7 @@ def build_dataset(words: list[str], stoi: object, itos: object):
     return X, Y
 
 
-def load_split_data(words: list[str], stoi: object, itos: object):
+def load_split_data(words: list[str], stoi: object, block_size=3):
     """
     Quickstart:
 
@@ -47,7 +46,7 @@ def load_split_data(words: list[str], stoi: object, itos: object):
     n1 = int(0.8 * len(words))
     n2 = int(0.9 * len(words))
 
-    Xtr, Ytr = build_dataset(words[:n1], stoi, itos)
-    Xdev, Ydev = build_dataset(words[n1:n2], stoi, itos)
-    Xte, Yte = build_dataset(words[n2:], stoi, itos)
+    Xtr, Ytr = build_dataset(words[:n1], stoi, block_size)
+    Xdev, Ydev = build_dataset(words[n1:n2], stoi, block_size)
+    Xte, Yte = build_dataset(words[n2:], stoi, block_size)
     return Xtr, Ytr, Xdev, Ydev, Xte, Yte
