@@ -46,6 +46,12 @@ class NGram:
         x = self.seq(x)
         return x
 
-    def set_training(self, isTrain=True):
+    def __set_training(self, isTrain: bool):
         for layer in self.layers:
             layer.training = isTrain
+
+    def train(self):
+        self.__set_training(True)
+
+    def eval(self):
+        self.__set_training(False)
